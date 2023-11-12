@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>DIOP</projectKey>
+    <exportDate>2023-11-12 13:35:50 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="111951605" key="DIOP-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Gustavo Matos  (Gerente)</createdBy>
+            <createdOn>2023-11-12 13:19:13 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Test Lista de Produtos da Cotação]]></name>
+            <objective><![CDATA[Este teste tem como objetivo validar se os campos foram corretamente criados para lista e se as regras de neg&oacute;cio est&atilde;o funcionando corretamente.]]></objective>
+            <owner>62952a8a1c69c7006ac3fd33</owner>
+            <precondition><![CDATA[]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente queira adicionar um produto a cotação
+
+And que o produto não esteja já atrelado a cotação
+
+When clicar em adicionar produto da cotação
+
+Then seja solicitado que ele preencha os campos necessários]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="111951647" key="DIOP-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Gustavo Matos  (Gerente)</createdBy>
+            <createdOn>2023-11-12 13:29:48 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Test Lista da Cotação]]></name>
+            <objective><![CDATA[Este teste tem como objetivo validar se os campos foram corretamente criados para lista e se as regras de neg&oacute;cio est&atilde;o funcionando corretamente.]]></objective>
+            <owner>62952a8a1c69c7006ac3fd33</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente queira adicionar uma cotação
+
+And que ele esteja conectado ao sistema de cotação
+
+When clicar em criar cotação
+
+Then seja solicitado que ele preencha os campos necessários]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="111951651" key="DIOP-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Gustavo Matos  (Gerente)</createdBy>
+            <createdOn>2023-11-12 13:32:19 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Teste Funcional - Lista Cotação]]></name>
+            <owner>62952a8a1c69c7006ac3fd33</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar o sistema]]></description>
+                        <expectedResult><![CDATA[Que o usu&aacute;rio seja redirecionado a p&aacute;gina inicial do sistema.]]></expectedResult>
+                        <testData><![CDATA[Login e Senha do usu&aacute;rio]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Acessar a se&ccedil;&atilde;o de Cota&ccedil;&otilde;es]]></description>
+                        <expectedResult><![CDATA[<em></em>Que o usu&aacute;rio seja redirecionado a p&aacute;gina de cria&ccedil;&atilde;o de cota&ccedil;&otilde;es do sistema.]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Selecionar o bot&atilde;o criar e preencher as informa&ccedil;&otilde;es necess&aacute;rias]]></description>
+                        <expectedResult><![CDATA[Que o usu&aacute;rio consiga preencher as informa&ccedil;&otilde;es necess&aacute;rias para a cria&ccedil;&atilde;o de uma cota&ccedil;&atilde;o.]]></expectedResult>
+                        <testData><![CDATA[<ul><li><p>N&uacute;mero do Cota&ccedil;&atilde;o</p></li><li><p>Nome da Conta</p></li><li><p>Data da Cota&ccedil;&atilde;o</p></li></ul>]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="111951654" key="DIOP-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Gustavo Matos  (Gerente)</createdBy>
+            <createdOn>2023-11-12 13:33:46 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Teste Funcional - Lista Produto da Cotação]]></name>
+            <owner>62952a8a1c69c7006ac3fd33</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar o sistema]]></description>
+                        <expectedResult><![CDATA[Que o usu&aacute;rio seja redirecionado a p&aacute;gina inicial do sistema.]]></expectedResult>
+                        <testData><![CDATA[Login e Senha do usu&aacute;rio]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Acessar a se&ccedil;&atilde;o de Cota&ccedil;&otilde;es e selecionar um registro]]></description>
+                        <expectedResult><![CDATA[Que o usu&aacute;rio seja redirecionado a p&aacute;gina de visualiza&ccedil;&atilde;o de cota&ccedil;&otilde;es do sistema.]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Selecionar o bot&atilde;o adicionar produtos a cota&ccedil;&atilde;o e preencher as informa&ccedil;&otilde;es necess&aacute;rias]]></description>
+                        <expectedResult><![CDATA[Que o usu&aacute;rio consiga preencher as informa&ccedil;&otilde;es necess&aacute;rias para a cria&ccedil;&atilde;o de um produto da cota&ccedil;&atilde;o.]]></expectedResult>
+                        <testData><![CDATA[Cota&ccedil;&atilde;o<br>Pre&ccedil;o total<br>Pre&ccedil;o unit&aacute;rio<br>Produto<br>Quantidade ]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
